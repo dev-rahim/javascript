@@ -87,21 +87,53 @@ array.length
 
 ১৫. array এর উপাদান গুলা এর পজিশন ( index) কিভাবে কাজ করে। কত দিয়ে শুরু হয়। এবং মান কিভাবে চেইঞ্জ হয়। 
 
+JavaScript arrays are zero-indexed: the first element of an array is at index 0 , the second is at index 1 , and so on — and the last element is at the value of the array's length property minus 1 
+ 
+ change a value using index
+array[index_number]='New_value'
+
 ১৬. কোন একটা উপাদানের index এর মান -১ বলতে কি বুঝায় 
+it means the element is not in this array.
 
 ১৭. কিভাবে index দিয়ে কোন একটা array এর মধ্যে উপাদান এর মান খুঁজে বের করতে পারো 
+array[0]
+array[5]
+array[9]
 
 ১৮. কিভাবে কোন একটা index পজিশন এ array এর উপাদান এর মান চেইঞ্জ করতে পারবে 
+ change a value using index
+array[index_number]='New_value'
 
 ১৯. একটা Array এর মধ্যে কোন একটা উপাদান এর মান তোমাকে দেয়া আছে এখন সেটার index তুমি কিভাবে খুঁজে বের করতে পারো?
 
+array.indexOf('theValueGivenToMe')
+
 ২০. ধরো, কোন একটা ইনডেক্স দিয়ে উপাদান খুঁজতে গেছো। কিন্তু সেটার মান না দিয়ে তোমাকে undefined দেখাচ্ছে। সেটা দেখে তুমি কি বুঝবে? (একটু গুগলে সার্চ দাও। আমরা কোর্স এ এইটা আলোচনা করিনি। তারপরেও চেষ্টা করে দেখো)
+if the index was not in that array then the result was undefined 
+
 
 ২১. কোন একটা Array এর মধ্যে লাস্ট উপাদান হিসেবে কোন উপাদান হিসেবে যোগ করতে চাইলে কিভাৱে যোগ করবে। আবার Array থেকে শেষের উপাদান টা বের করে দিতে চাইলে কিভাবে বের করে দিবে
 
+arr.push('elenent') for add in last
+arr.pop() for remove frkm last
+
 ২২. কোন একটা Array এর মধ্যে প্রথম উপাদান হিসেবে কোন উপাদান হিসেবে যোগ করতে চাইলে কিভাৱে যোগ করবে। আবার Array থেকে প্রথম উপাদান টা বের করে দিতে চাইলে কিভাবে বের করে দিবে
+arr.unshift('element')  for ad in first item
+arr.shift() for remove first item
+
 
 ২৩. তুলনা কিভাবে করতে হয়। এইগুলার মানে কি: >, <, ==, !=, <=, >=, ===, !==, &&, ।। 
+
+a>b a is begier then b 
+a<b a is less then b
+ a==b is equal 
+a!=g  is not aqual 
+a<=b  a is less then of equal b
+a>=b  a is bigger or equal b
+a===b   is equal it's also data types
+a!==b is not equal it's also data types
+a>b&& a>c if tow conditions are true or not
+ a>b।।b>c  in thes tow condition is minimum 1 is true then result is true   
 
 ২৪. তোমার কাছে: ৮০০০০ টাকার বেশি হলে তুমি mac কিনবে, ৬০ টাকার বেশি হলে gaming ল্যাপটপ কিনবে, ৪০ হাজার টাকার বেশি হলে lenovo yoga কম্পিউটার কিনবে , ২০ হাজার টাকার বেশি হলে পুরান ল্যাপটপ কিনবে। না হয় তুমি মোবাইল দিয়ে কাজ চালাবে। 
 
