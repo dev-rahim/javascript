@@ -135,30 +135,91 @@ a!==b is not equal it's also data types
 a>b&& a>c if tow conditions are true or not
  a>b।।b>c  in thes tow condition is minimum 1 is true then result is true   
 
-২৪. তোমার কাছে: ৮০০০০ টাকার বেশি হলে তুমি mac কিনবে, ৬০ টাকার বেশি হলে gaming ল্যাপটপ কিনবে, ৪০ হাজার টাকার বেশি হলে lenovo yoga কম্পিউটার কিনবে , ২০ হাজার টাকার বেশি হলে পুরান ল্যাপটপ কিনবে। না হয় তুমি মোবাইল দিয়ে কাজ চালাবে। 
+ */
+// ২৪. তোমার কাছে: ৮০০০০ টাকার বেশি হলে তুমি mac কিনবে, ৬০ টাকার বেশি হলে gaming ল্যাপটপ কিনবে, ৪০ হাজার টাকার বেশি হলে lenovo yoga কম্পিউটার কিনবে , ২০ হাজার টাকার বেশি হলে পুরান ল্যাপটপ কিনবে। না হয় তুমি মোবাইল দিয়ে কাজ চালাবে।
+var money = 39000;
+if (money >= 80000) {
+  console.log("Buy a Mac");
+} else if (money >= 60000) {
+  console.log("Buy a Gaming Laptop");
+} else if (money >= 40000) {
+  console.log("Buy a lenovo yoga Desktop");
+} else if (money >= 20000) {
+  console.log("Buy a Recondition Laptop");
+} else {
+  console.log("Buy a mobile Phone");
+}
 
----------------------
+// ২৫. আসকে আমার মন ভালো নেই এই কথা ৩৯ বার আউটপুট হিসেবে দেখাও।
+var i = 1;
+while (i <= 39) {
+  //   console.log(i, " আসকে আমার মন ভালো নেই");
+  i++;
+}
+// ২৬. while লুপ কিভাবে কাজ করে
+// there was a initial variable whith that variable we have to throw a condition if the condition was true then enter the loop and follow the statment and we hate to do that variable value intremant or decrement
+/* 
+from googl
 
-২৫. আসকে আমার মন ভালো নেই এই কথা ৩৯ বার আউটপুট হিসেবে দেখাও। 
+The while loop checks the condition first, and if it returns true, the code within it runs. The loop continues until the condition provided returns false, then stops. Alternatively, the do while loop runs its code once before checking the condition and runs again only if the condition is true. */
 
-২৬. while লুপ কিভাবে কাজ করে 
+// ২৭. for লুপ কিভাবে কাজ করে
+/* a header specifying the iteration, and a body which is executed once per iteration. The header often declares an explicit loop counter or loop variable, which allows the body to know which iteration is being executed. */
 
-২৭. for লুপ কিভাবে কাজ করে 
 
-২৮. while লুপ এর মধ্যে লুপ ভেরিয়েবল চেইঞ্জ না করলে কি সমস্যা হয়। 
+// ২৮. while লুপ এর মধ্যে লুপ ভেরিয়েবল চেইঞ্জ না করলে কি সমস্যা হয়।
+// thats will be a infinite loop
 
-২৯. একটা কোড লিখে ৫৮ থেকে ৯৮ পর্যন্ত যত সংখ্যা আছে সেগুলাকে দেখাও 
+// ২৯. একটা কোড লিখে ৫৮ থেকে ৯৮ পর্যন্ত যত সংখ্যা আছে সেগুলাকে দেখাও
+var number = 58;
+while (number <= 98) {
+  //   console.log(number);
+  number++;
+}
 
-৩০.একটা কোড লিখে ৪১২ থেকে ৪৫৬ পর্যন্ত যত জোর সংখ্যা আছে সেগুলাকে দেখাও  
+// ৩০.একটা কোড লিখে ৪১২ থেকে ৪৫৬ পর্যন্ত যত জোর সংখ্যা আছে সেগুলাকে দেখাও
+var initialValue = 412;
+while (initialValue <= 456) {
+  //   console.log(initialValue);
+  initialValue += 2;
+}
+// ৩১. একটা কোড লিখে ৫৮১ থেকে ৬২৩ পর্যন্ত যত বিজোড় সংখ্যা আছে সেগুলাকে দেখাও
+for (let index = 581; index <= 623; index += 2) {
+  //   console.log(index);
+}
+// ৩২.while আর for loop এর মধ্যে পার্থক্য কি
 
-৩১. একটা কোড লিখে ৫৮১ থেকে ৬২৩ পর্যন্ত যত বিজোড় সংখ্যা আছে সেগুলাকে দেখাও 
+// ৩৩ তুমি এতদিন যা যা জিনিস শিখছো সেগুলার নাম দিয়ে একটা array বানাও। তারপর একটা for লুপ দিয়ে সেই array এর সব উপাদান কে আউটপুট হিসেবে দেখাও।
+var itemsLearn = ["HTML", "CSS", "BOOTSTRAP", "TAILWIND CSS", "BASIC JS"];
+for (let index = 0; index < itemsLearn.length; index++) {
+  const element = itemsLearn[index];
+  //   console.log(element);
+}
 
-৩২.while আর for loop এর মধ্যে পার্থক্য কি 
+// ৩৪. তুমি এতদিন পর্যন্ত যে যে মডেলের মোবাইল ফোন ইউজ করেছো সেগুলার নাম দিয়ে একটা array বানাও। তারপর একটা while লুপ দিয়ে সেই array এর উপাদান গুলা একটা একটা করে আউটপুট হিসেবে দেখাও
+var usedMobile = ["Itel", "Samsung", "Oppo", "Vibo"];
+var usedMobileIndex = 0;
+while (usedMobileIndex < usedMobile.length) {
+  var element = usedMobile[usedMobileIndex];
+  //   console.log(element);
+  usedMobileIndex++;
+}
 
-৩৩ তুমি এতদিন যা যা জিনিস শিখছো সেগুলার নাম দিয়ে একটা array বানাও। তারপর একটা for লুপ দিয়ে সেই array এর সব উপাদান কে আউটপুট হিসেবে দেখাও। 
+// ৩৫. একটা ফর লুপ চালাও। ৩০ থেকে ৮৬ পর্যন্ত। আর এই লুপ ৪৪ এ গেলে ব্রেক করবে। সেই জিনিস কোড করে দেখাও
+for (let i = 30; i <= 86; i++) {
+  //   console.log(i);
+  if (i == 44) {
+    break;
+  }
+}
 
-৩৪. তুমি এতদিন পর্যন্ত যে যে মডেলের মোবাইল ফোন ইউজ করেছো সেগুলার নাম দিয়ে একটা array বানাও। তারপর একটা while লুপ দিয়ে সেই array এর উপাদান গুলা একটা একটা করে আউটপুট হিসেবে দেখাও 
+// ৩৬. তোমার যত বই আছে সেগুলার দাম নিয়ে একটা array লিখে ফেলো। যে বই গুলোর দাম ২০০ টাকার উপরে সেগুলাকে স্কিপ করবে। অর্থাৎ সেগুলাকে আউটপুট হিসেবে দেখাবে না। বাকিদের কে আউটপুট হিসেবে দেখাবে। দেখো করতে পারো কিনা।
 
-৩৫. একটা ফর লুপ চালাও। ৩০ থেকে ৮৬ পর্যন্ত। আর এই লুপ ৪৪ এ গেলে ব্রেক করবে। সেই জিনিস কোড করে দেখাও 
-
-৩৬. তোমার যত বই আছে সেগুলার দাম নিয়ে একটা array লিখে ফেলো। যে বই গুলোর দাম ২০০ টাকার উপরে সেগুলাকে স্কিপ করবে। অর্থাৎ সেগুলাকে আউটপুট হিসেবে দেখাবে না। বাকিদের কে আউটপুট হিসেবে দেখাবে। দেখো করতে পারো কিনা।  */
+var books = [200, 250, 150, 63, 650, 400, 180];
+for (let index = 0; index < books.length; index++) {
+  const element = books[index];
+  if (element > 200) {
+    continue;
+  }
+  console.log(element);
+}
