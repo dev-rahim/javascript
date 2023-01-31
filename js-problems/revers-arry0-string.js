@@ -14,3 +14,14 @@ for (let index = name.length - 1; index >= 0; index--) {
 }
 
 console.log(newName);
+
+const reverseMaker = (word) => {
+  //Write Your solution Here
+  let reverseName = "";
+  for (let index = word.length - 1; index >= 0; index--) {
+    const element = word[index];
+    reverseName += element;
+  }
+  return reverseName;
+};
+console.log(reverseMaker("nasir"));
