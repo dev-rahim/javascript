@@ -3,8 +3,8 @@
 function secondLargest(numbers) {
   //Write your code here
   //Don't forget to return
-  const numberReverseSort = numbers.sort((a, b) => b - a);
-  return numberReverseSort[1];
+  const numberReverseSort = numbers.sort((a, b) => a - b)[0];
+  return numberReverseSort;
 }
 
-console.log(secondLargest([10, 33, 100, 5, 99, 6]));
+console.log(secondLargest([10, 33, 2, 100, 5, 99, 6]));
