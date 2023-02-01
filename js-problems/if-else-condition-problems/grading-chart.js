@@ -8,14 +8,34 @@ and John’s total score is 40. The grading chart is
 39 or less => F grade
 
 Write a program to find your and your friends’ grades using if-else. */
-const totalScore = 50;
+// const totalScore = 50;
 
-if (totalScore >= 80) {
-  console.log("Congratulation your Grade is = A");
-} else if (totalScore >= 60) {
-  console.log("Congratulation your Grade is = B");
-} else if (totalScore >= 50) {
-  console.log("Congratulation your Grade is = C");
-} else if (totalScore >= 40) {
-  console.log("Congratulation your Grade is = D");
-} else console.log("Sorry you'r Fail");
+// if (totalScore >= 80) {
+//   return "A";
+// } else if (totalScore >= 60) {
+//   return "B";
+// } else if (totalScore >= 50) {
+//   return "C";
+// } else if (totalScore >= 40) {
+//   return "D";
+// } else if (totalScore <= 39) {
+//   return "F";
+// }
+
+function findGrade(marks) {
+  //write your code here
+  //don't forget to write return
+  if (marks >= 80) {
+    return "A";
+  } else if (marks >= 60) {
+    return "B";
+  } else if (marks >= 50) {
+    return "C";
+  } else if (marks >= 40) {
+    return "D";
+  } else if (marks <= 39) {
+    return "F";
+  }
+}
+
+console.log(findGrade(39));
