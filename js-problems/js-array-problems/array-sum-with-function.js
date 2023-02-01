@@ -13,14 +13,16 @@ You can return the answer in any order. */
   }
 }; */
 
-var twoSum = function (nums, target) {
+let twoSum = function (nums, target) {
+  let mp = new Map();
+  console.log(typeof mp);
   for (let index = 0; index < nums.length; index++) {
-      const element = nums[index];
-      
-      if (nums[element]) {
-        
-      }
-    
+    const element = target - nums[index];
+
+    if (mp.has(element)) {
+      return [index, mp.get(element)];
+    }
+    mp.set(nums[index], index);
   }
 };
 
@@ -28,8 +30,8 @@ var twoSum = function (nums, target) {
 // const target = 9;
 // const numbers = [3, 2, 4];
 // const target = 6;
-const numbers = [3,2, 3];
+const numbers = [3, 2, 3];
 const target = 6;
-twoSum(numbers, target);
+console.log(twoSum(numbers, target));
 // const result = twoSum(numbers, target);
 // console.log(result);
